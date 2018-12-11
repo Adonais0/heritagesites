@@ -18,8 +18,10 @@
     <div class="col-sm-9">
       {% for site in object_list %}
         <h4><a href="{% url 'site_detail' site.pk %}">{{ site.site_name }}</a></h4>
-        {% if site.country_area_name %}
-          {{ site.country_area_name }}
+
+        {% if site.country_area %}
+        <p>{{ site.country_area_names }}</p>
+
         {% endif %}
         <!-- add the country_area_names and description template tags -->
         {% if site.description %}

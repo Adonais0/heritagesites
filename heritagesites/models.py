@@ -202,8 +202,6 @@ class HeritageSite(models.Model):
         return ', '.join(names)
 
 
-
-
 '''
 # class HeritageSite(models.Model):
 #     heritage_site_id = models.AutoField(primary_key=True)
